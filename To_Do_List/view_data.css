@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, #1a1a2e, #16213e, #0f3460);
+    overflow: hidden;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+@keyframes backgroundGlow {
+    0% { background: radial-gradient(circle, #1a1a2e, #16213e, #0f3460); }
+    100% { background: radial-gradient(circle, #16213e, #1a1a2e, #0f3460); }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.8);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #00d4ff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px; 
+}
+
+form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #00d4ff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #00d4ff;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background: #009ecf;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+table th {
+    background-color: #00d4ff;
+    color: #000000;
+    font-size: 18px;
+}
+
+table td {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+table tr:hover {
+    background-color: rgba(0, 212, 255, 0.15);
+}
+
+table a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #00d4ff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+table a:hover {
+    background-color: #009ecf;
+}
+
+input, button {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    form input[type="text"], form input[type="submit"] {
+        width: 100%;
+    }
+}
